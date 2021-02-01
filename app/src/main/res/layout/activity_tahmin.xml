@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tahminActivity">
+
+    <TextView
+        android:id="@+id/remainderNumber"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="150dp"
+        android:background="@android:color/background_light"
+        android:text="Remainder Due:5"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/increaseDecrease"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainderNumber" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="ENTER"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextGirdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Enter Prediction"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/increaseDecrease" />
+
+    <TextView
+        android:id="@+id/textViewAralık"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="131dp"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/increaseDecrease" />
+</androidx.constraintlayout.widget.ConstraintLayout>
